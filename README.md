@@ -1,8 +1,12 @@
-# Multi-agent Population-based Training
+# Learning to Cooperate with Humans using Generative Agents
 
 ## Description
 
-Training framework of MAPPO and population-based training.
+Training framework of **G**enerative **A**gent **M**odeling for **M**ulti-agent **A**daptation (**GAMMA**)
+
+paper: [Learning to Cooperate with Humans using Generative Agents (NeurIPS 2024)](https://openreview.net/forum?id=v4dXL3LsGX)
+
+demo/website: [https://sites.google.com/view/human-ai-gamma-2024/](https://sites.google.com/view/human-ai-gamma-2024/)
 
 
 
@@ -36,15 +40,6 @@ pip install -e .
 # Install overcooked
 pip install -e mapbt/envs/overcooked/overcooked_berkeley
 ```
-
-
-
-## Tips
-
-- Never work on the "main" branch directly! Create a new branch and do whatever you want
-- Don't forget "git rebase main" to keep updated with the "main" branch, especially before the pull request
-- For most cases, create new files or write additional code for a new feature, rather than modify the original code
-
 
 
 ## Run (Example: Overcooked)
@@ -112,6 +107,8 @@ cp "bc_model" "mapbt/scripts/policy_models/[layout_name]/proxy.pt"
 # Evaluate
 bash eval_overcooked_mep_vs_proxy.sh
 ```
+
+## Cite
 
 
 
